@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">mail</string>
+    <string name="name">Valera Pupkin</string>
+    <string name="topic">Give away!</string>
+    <string name="email_text">Valera i find one give away.You mast go over this link nayob.net</string>
+    <string name="email_date">14.02.19</string>
+    <string name="email_title_placeholder">Anonymous</string>
+    <string name="button_one_text">Reply</string>
+    <string name="button_two_text">Forward</string>
+    <string name="from">From</string>
+    <string name="whom">Whom</string>
+    <string name="topic_create">Topic</string>
+    <string name="pidckazka">Text messange</string>
+    <string name="add">Add business signature</string>
+    <string name="button_send">Send</string>
+
+</resources>

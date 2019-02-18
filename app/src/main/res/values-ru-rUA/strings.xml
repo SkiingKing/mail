@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">=Пошта</string>
+    <string name="name">Валера Пупкін</string>
+    <string name="topic">Розигриш!</string>
+    <string name="email_text">Валера я знайшов один розіграш.Ти маєш перейти по цій силці nayob.net</string>
+    <string name="email_date">14.02.19</string>
+    <string name="email_title_placeholder">Anonymous</string>
+    <string name="button_one_text">Відповісти</string>
+    <string name="button_two_text">Далі</string>
+    <string name="from">Від</string>
+    <string name="whom">Кому</string>
+    <string name="topic_create">Тема</string>
+    <string name="pidckazka">Текс повідомлення</string>
+    <string name="add">Додати діловий підпис</string>
+    <string name="button_send">Відпарвити</string>
+
+</resources>
