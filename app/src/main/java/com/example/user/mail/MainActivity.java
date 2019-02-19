@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity implements EmailAdapter.Emai
         image_user = findViewById(R.id.user_image);
         image_user2 = findViewById(R.id.user_detal_view);
 
-        Glide.with(this).load("https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png").into(image_user);
-        Glide.with(this).load("https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png").into(image_user2);
-        Glide.with(this).load("http://www.pngmart.com/files/2/Yoshi-PNG-File.png").into(image_detal_center);
+//        Glide.with(this).load("https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png").into(image_user);
+//        Glide.with(this).load("https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png").into(image_user2);
+  //      Glide.with(this).load("http://www.pngmart.com/files/2/Yoshi-PNG-File.png").into(image_detal_center);
 
         emailRecycler.setLayoutManager(new LinearLayoutManager(this));
-        EmailAdapter emailAdapter = new EmailAdapter(list, this);
+        EmailAdapter emailAdapter = new EmailAdapter(list, this,this);
         emailRecycler.setAdapter(emailAdapter);
 
         android.support.design.widget.FloatingActionButton FloatActionButton = findViewById(R.id.fab);
@@ -66,13 +66,14 @@ public class MainActivity extends AppCompatActivity implements EmailAdapter.Emai
         startActivity(intent);
     }
 
+
     private List<EmailItem> generateEmailList() {
         List<EmailItem> list = new ArrayList<>();
         list.add(new EmailItem("Google", "Work", "Google invite you on work","14.02.19","https://itc.ua/wp-content/uploads/2017/10/google-logo-1200x630-1.jpg"));
-        list.add(new EmailItem("", "Real-Time Dashboards ", "etuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis", "20m","\"https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png\""));
-        list.add(new EmailItem("Lucas 9-9", "Why is Python so popular despite being so slow? ", "ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis", "55m","\"https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png\""));
-        list.add(new EmailItem("Amazon Rose", "Will Canada buy the F-35? ", "Thanks for accepting my connection, it’s great to have someone with similar interests in my network!", "1h","\"https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png\""));
-        list.add(new EmailItem("Maik", null, "Lorem impus... WHAT???!!!", "4h","\"https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png\""));
+        list.add(new EmailItem("", "Real-Time Dashboards ", "etuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis", "20m","https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png"));
+        list.add(new EmailItem("Lucas 9-9", "Why is Python so popular despite being so slow? ", "ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis", "55m","https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png\""));
+        list.add(new EmailItem("Amazon Rose", "Will Canada buy the F-35? ", "Thanks for accepting my connection, it’s great to have someone with similar interests in my network!", "1h","https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png"));
+        list.add(new EmailItem("Maik", null, "Lorem impus... WHAT???!!!", "4h","https://pngimage.net/wp-content/uploads/2018/06/gambar-user-png-2.png"));
         return list;
     }
 }

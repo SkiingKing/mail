@@ -3,6 +3,7 @@ package com.example.user.mail;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.widget.ImageView;
 
 public class EmailItem implements Parcelable {
 
@@ -23,6 +24,10 @@ public class EmailItem implements Parcelable {
 
     String getTitle() {
         return title;
+    }
+
+    String getUserImg(){
+        return  imageUrl;
     }
 
     String getSecondtext() {
