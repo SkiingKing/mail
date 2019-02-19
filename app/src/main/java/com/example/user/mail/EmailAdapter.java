@@ -65,14 +65,14 @@ public class EmailAdapter extends RecyclerView.Adapter<EmailAdapter.ViewHolder> 
             // в случае пустой или null строки в объекте, ставим вместо него другой текст
             holder.titleTv.setText(R.string.email_title_placeholder);
         }
-        if (item.getSubTitle() != null && !item.getSubTitle().isEmpty()) {
-            holder.subTitleTv.setText(item.getSubTitle());
+        if (item.getSecondtext() != null && !item.getSecondtext().isEmpty()) {
+            holder.subTitleTv.setText(item.getSecondtext());
         } else {
             // в случае пустой или null строки в объекте, прячем textview с текущего элемента
             holder.subTitleTv.setVisibility(View.GONE);
         }
-        if (item.getContent() != null && !item.getContent().isEmpty()) {
-            holder.contentTv.setText(item.getContent());
+        if (item.getText() != null && !item.getText().isEmpty()) {
+            holder.contentTv.setText(item.getText());
         } else {
             holder.contentTv.setVisibility(View.GONE);
         }
